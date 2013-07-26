@@ -137,3 +137,49 @@ footer {
   font-weight: bold;
   text-align: center;
 }
+
+@media screen and (max-width:630px) {
+  body {
+    background-image: none;
+    background-color: silver;
+  }
+
+  .page-wrapper {
+    background-image: none;
+    width: 480px;
+    margin: auto;
+    text-align: left;
+  }
+
+  header h1 {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  header {
+    background-image: none;
+  }
+
+  /*This is messy. I am not happy with it.*/
+  .summary, .sidebar {
+    position: absolute;
+    float: none;
+    left: 25%;
+  }
+  .preamble {
+    margin-top: -280px;
+  }
+  .summary {
+    margin-top: 1280px;
+    width: 380px;
+  }
+  .summary p {
+    margin-left: -90px;
+  }
+  .sidebar {
+    margin-top: 1225px;
+  }
+
+
+}

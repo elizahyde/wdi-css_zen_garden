@@ -1,1 +1,139 @@
-/* Have fun :) */
+/*links are red! no underlines.*/
+a {
+  color: red;
+  text-decoration: none;
+}
+/*i dont know what this background image is supposed to be but im putting it here*/
+body {
+  background-image: url(./images/background.gif);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 11px;
+  line-height: 16px;
+  font-family: verdana;
+}
+/*hide top area*/
+header h1, header h2 {
+  display: none;
+}
+/*hide big section headers. 0 margin made the top box align with top*/
+.preamble h3, .supporting h3, .sidebar h3 {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 0;
+  padding: 10px;
+}
+/*add some margins to the paragraphs */
+.preamble p, .supporting p, .summary p {
+  margin: 10px;
+}
+/*pushes the text down so it aligned better*/
+.summary p:first-child {
+  margin-top: 60px;
+}
+/*replaces bullet with folded paper*/
+/*text-transform capitlizes each word*/
+.design-selection ul li {
+  list-style-image: url(./images/paperfolded.gif);
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+/*this was me trying to format this section. meh*/
+.design-selection .designer-name {
+  display: inline-block;
+}
+
+/*replaces bullet with paper*/
+.design-archives ul li, .zen-resources ul li {
+  list-style-image: url(./images/paper.gif);
+  margin-bottom: 5px;
+}
+/*repeat image down y axis to full page*/
+.page-wrapper {
+  background-image: url(./images/containerbackground.gif);
+  background-repeat:repeat-y;
+  background-position: top center;
+  width: 633px;
+  margin: auto;
+  text-align: left;
+  position: relative;
+}
+/*dims are size of image*/
+header {
+  background-image: url(./images/top.gif);
+  margin-left: 14px;
+  width: 605px;
+  height: 332px;
+  margin-top: 0;
+}
+
+/*main sections are set to this width which is header image width*/
+/*I added that margin to fix an alignment issue*/
+.preamble, .supporting {
+  width: 389px;
+  margin-left: 22px;
+}
+
+.preamble {
+  background-image: url(./images/title1.gif);
+  background-repeat: no-repeat;
+}
+
+.explanation {
+  background-image: url(./images/title2.gif);
+  background-repeat: no-repeat;
+}
+
+.participation {
+  background-image: url(./images/title3.gif);
+  background-repeat: no-repeat;
+}
+
+.benefits {
+  background-image: url(./images/title4.gif);
+  background-repeat: no-repeat;
+}
+
+.requirements {
+  background-image: url(./images/title5.gif);
+  background-repeat: no-repeat;
+}
+
+/*this puts all the little sections on the right*/
+.summary, .sidebar {
+  left: 420px;
+  width: 192px;
+  position: absolute;
+}
+.sidebar {
+  top: 525px;
+}
+.summary {
+  background-image: url(./images/summary.gif);
+  background-repeat: no-repeat;
+}
+
+.design-selection {
+  background-image: url(./images/designs.gif);
+  background-repeat: no-repeat;
+}
+
+.design-archives {
+  background-image: url(./images/archives.gif);
+  background-repeat: no-repeat;
+}
+
+.zen-resources {
+  background-image: url(./images/resources.gif);
+  background-repeat: no-repeat;
+}
+
+footer {
+  padding: 5px 0 5px 0;
+  border-top: 1px solid silver;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+}
